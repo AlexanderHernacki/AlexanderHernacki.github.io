@@ -1,0 +1,160 @@
+h1
+{
+  font-family : Roboto;
+  font-weight : bold;
+  font-size : 72px;
+  color : #161310;
+  color : rgb(22, 19, 16);
+}
+h2
+{
+  font-family : Roboto;
+  font-weight : bold;
+  font-size : 60px;
+  color : #161310;
+  color : rgb(22, 19, 16);
+}
+h3
+{
+  font-family : Roboto;
+  font-weight : bold;
+  font-size : 48px;
+  color : #161310;
+  color : rgb(22, 19, 16);
+}
+h4
+{
+  font-family : Roboto;
+  font-weight: 500;
+  font-size : 36px;
+  color : #161310;
+  color : rgb(22, 19, 16);
+}
+h5
+{
+  font-family : Roboto;
+  font-weight: 500;
+  font-size : 24px;
+  color : #161310;
+  color : rgb(22, 19, 16);
+}
+h6
+{
+  font-family : Roboto;
+  font-weight: 500;
+  font-size : 21px;
+  color : #161310;
+  color : rgb(22, 19, 16);
+}
+p
+{
+  font-family : Roboto;
+  font-weight: 400;
+  font-size : 18px;
+  color : #161310;
+  color : rgb(22, 19, 16);
+}
+button
+{
+  background : #5B5041;
+  background : rgba(91, 80, 65, 1);
+  border-style : Solid;
+  border-color : #698E96;
+  border-color : rgba(105, 142, 150, 1);
+  border-width : 6px;
+  font-family : Roboto;
+  font-size : 18px;
+  color : #D3E0E2;
+  color : rgb(211, 224, 226);
+}
+button:hover
+{
+    background : #261D33;
+    background : rgba(38, 29, 51, 1);
+    border-style : Solid;
+    border-color : #698E96;
+    border-color : rgba(105, 142, 150, 1);
+    border-width : 6px;
+    font-family : Roboto;
+    font-size : 18px;
+    color : #D3E0E2;
+    color : rgb(211, 224, 226);
+  }
+  button:active
+  {
+    background : #698E96;
+    background : rgba(105, 142, 150, 1);
+    border-style : Solid;
+    border-color : #5B5041;
+    border-color : rgba(91, 80, 65, 1);
+    border-width : 6px;
+    font-family : Roboto;
+    font-size : 18px;
+    color : #D3E0E2;
+    color : rgb(211, 224, 226);
+  }
+  hr
+{
+  border-style : Solid;
+  border-color : #698E96;
+  border-color : rgba(105, 142, 150, 1);
+  border-width : 18px;
+}
+a
+{
+  font-family : Roboto;
+  font-size : 18px;
+  color : #698E96;
+  color : rgb(105, 142, 150);
+}
+a:visited
+{
+  font-family : Roboto;
+  font-size : 18px;
+  color : #261D33;
+  color : rgb(38, 29, 51);
+}
+a:hover
+{
+  font-family : Roboto;
+  font-size : 18px;
+  color : #5B5041;
+  color : rgb(91, 80, 65);
+}
+body{
+    background : #D3E0E2;
+}
+ol{
+   list-style-type:lower-alpha; 
+   font-family : Roboto;
+   font-weight: 500;
+   font-size : 18px;
+   color : #161310;
+   color : rgb(22, 19, 16);
+}
+ol li{
+    font-family : Roboto;
+   font-weight: 300;
+   font-size : 18px;
+   color : #161310;
+   color : rgb(22, 19, 16);
+}
+ul{
+    list-style-type: disc; 
+    font-family : Roboto;
+    font-weight: 500;
+    font-size : 18px;
+    color : #161310;
+    color : rgb(22, 19, 16);
+ }
+ ul li{
+     font-family : Roboto;
+    font-weight: 300;
+    font-size : 18px;
+    color : #161310;
+    color : rgb(22, 19, 16);
+ }
+
+  
+
+
