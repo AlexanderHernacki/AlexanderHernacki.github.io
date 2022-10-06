@@ -158,29 +158,71 @@ ul{
  }
 
  @media (max-width: 700px) and (min-width:400px) {
-body{
-  display: grid;
-  grid-template-columns: 100vw;
-  grid-template-rows: repeat(5,calc(60vh / 5)) 35vh;
-  align-items: center;
-  justify-content: space-around;
-  justify-items: center;
+  body{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(5,calc(100vh/5));
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+  }
+  nav{
+    grid-column:1/2;
+    grid-row: 5/6;
+  }
+  .menu{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(4,1fr);
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
   
 }
-img {
-  grid-area: 6/1/7/2;
-  max-height: 100%;
-  width: auto;
-} 
-hr{
-  display:block;
-  margin:5vw;
-  width:90vw;
-  /*position: absolute;
-  top:60vh;
-  left:0;*/
+button{
+  font-size : 18px;
+}
+button.About{
+  grid-row: 4/5;
+  height: 100%;
+  width: 100%;
 
 }
+button.CAD{
+  grid-row: 3/4;
+  height: 100%;
+  width: 100%;
+
+}
+button.BOM{
+  grid-row: 1/2;
+  height: 100%;
+  width: 100%;
+
+}
+button.Results{
+  grid-row: 2/3;
+  height: 100%;
+  width: 100%;
+
+}
+
+
+h1
+{
+ 
+  font-family : Roboto;
+  font-weight : bold;
+  font-size : calc(72px/2);
+  color : #161310;
+  color : rgb(22, 19, 16);
+}
+.content{
+  grid-row: 1/2;
+  grid-column: span;
+}
+
+
 }
 
 @media (max-width: 1900px) and (min-width:1100px) {
@@ -193,8 +235,80 @@ body{
 
  
 }
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+.menu{
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 25% 35% 40%;
+  grid-template-rows: 35% 25% 25% 15%;
+  /*align-items: center;
+  justify-content: space-around;
+  justify-items: center;*/
+
+}
+button.About{
+  grid-row: 4/5;
+  grid-column: 3/4;
+  height: 100%;
+  width: 100%;
+
+}
+button.CAD{
+  grid-row: 3/4;
+  grid-column: 1/2;
+  height: 100%;
+  width: 100%;
+
+}
+button.BOM{
+  grid-row: 4/5;
+  grid-column: 1/3;
+  height: 100%;
+  width: 100%;
+
+}
+button.Results{
+  grid-row: 2/3;
+  grid-column: 1/2;
+  height: 100%;
+  width: 100%;
+
+}
+
+
+
+
+.content{
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 25% 35% 40%;
+  grid-template-rows: 35% 25% 25% 15%;
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center;
+  text-align: center;
+}
+
+
+
 h1{
-  grid-area: 1/1/3/3;
+  grid-row: 1/2;
+  grid-column: 1/4;
+  width: 100%;
+  height: auto;
+  font-size : calc(72px*1.75);
+  margin-top: 7%
+ 
 }
 hr{
   /*grid-area: 4/1/5/3;*/
