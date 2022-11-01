@@ -14,7 +14,16 @@ async function getQuote(){
 console.log("Button Is Clicked!");
 let data= await fetch('https://api.whatdoestrumpthink.com/api/v1/quotes/random')
 .then((response) => response.json())
-.then((data) => displayQuote(data.message));
+.then((data) => {
+    displayQuote(data.message);
+
+    console.log(data.message);
+
+})
+.catch(error => {
+    throw(error);
+    alert("Something Went Wrong");
+});
 
 
 
@@ -25,5 +34,5 @@ let data= await fetch('https://api.whatdoestrumpthink.com/api/v1/quotes/random')
 
 function displayQuote(Quote){
 quoteText.textContent=Quote;
-console.log(Quote);
+
 }
