@@ -12,12 +12,12 @@ button.addEventListener('click',getQuote);
 
 async function getQuote(){
 console.log("Button Is Clicked!");
-let data= await fetch('https://www.uuidgenerator.net/api/version1')
+let data= await fetch('https://api.whatdoestrumpthink.com/api/v1/quotes/random')
 .then((response) => response.json())
 .then((data) => {
-    //displayQuote(data.message);
+    displayQuote(data.message);
 
-    console.log(data);
+    console.log(data.message);
 
 })
 .catch(error => {
