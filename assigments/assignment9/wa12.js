@@ -2,6 +2,16 @@
 
 const canvas = document.querySelector('canvas');
 //my code
+const output = document.querySelector('.output');
+
+const submit = document.querySelector('.SubmitButton');
+
+submit.addEventListener('click',submitNumber);
+
+function submitNumber()
+{
+    alert('Submitted your Phone number '+output.textContent)
+}
 canvas.addEventListener('click', (e) => {
   const mousePos = {
     x: e.clientX - canvas.offsetLeft,
@@ -13,8 +23,22 @@ canvas.addEventListener('click', (e) => {
   // create rgb color for that pixel
   const color = `rgb(${pixel[0]},${pixel[1]},${pixel[2]})`;
 
+  const phoneColor= String(pixel[0])+String(pixel[1])+String(pixel[2]);
+
   console.log(color);
+
+  const digitsToKeep= 10-phoneColor.length;
+  console.log(digitsToKeep);
+  var oldDigits= "";
+  for(ii=9;ii>(9-digitsToKeep);ii--){
+    oldDigits=output.textContent[ii]+oldDigits;
+  }
+  console.log(oldDigits);
+
+  output.textContent = oldDigits+phoneColor;
+  
 });
+
 /*elemLeft = canvas.offsetLeft + canvas.clientLeft,
 elemTop = canvas.offsetTop + canvas.clientTop,
 canvas.addEventListener('click',test(event));*/
